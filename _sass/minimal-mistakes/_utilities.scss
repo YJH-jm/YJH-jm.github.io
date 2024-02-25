@@ -592,6 +592,16 @@ a.reversefootnote {
   }
 }
 
-.img-width-half {
+.img-display {
   width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-display-60 {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
