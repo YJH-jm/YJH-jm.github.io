@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "custom" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR" # "en-US"
-title                    : "JH_NOTE"
+title                    : "JH_NOTE" # # 상단 헤더에 보이는 블로그 타이틀
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JIHYUN"
-description              : "내용 정리 블로그"
+name                     : "JIHYUN" # # 블로그 닉네임 설정
+description              : "DevLog" # 블로그 설명
 url                      : "https://YJH-jm.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,28 +102,30 @@ analytics:
     anonymize_ip         : false # true, false (default)
 
 
-# Site Author
+# Site Author (Home에서 해당 내용은 숨김 상태)
 author:
   name             : "JIHYUN"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "내용 정리 노트"
-  location         : "South Korea"
+  bio              : "블로그 이사 중"
+  # location         : "South Korea"
   # email            : "jmjhjob13@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jmjhjob13@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/YJH-jm"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:jmjhjob13@gmail.com"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/YJH-jm"
 
 # Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/YJH-jm"
-
+# footer:
+#   links:
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/YJH-jm"
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:jmjhjob13@gmail.com"
 
 # Reading Files
 include:
@@ -191,7 +193,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -259,11 +261,18 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      # read_time: true
       comments: # true
       share: true
       related: true
       show_date: true
+      sidebar :
+        nav: "categories"
+      sidebar_main: true 
+      # toc :true
+
+# toc_sticky : true로 만들어주면, 화면을 옮겨도(스크롤을 해도) 항상 우측 상단에 고정되어있습니다.
+# toc_label : toc의 제목입니다. 지정하지 않으면 MY PAGE과 같은 기본값으로 보입니다.
 
 
 date_format: "%Y-%m-%d"
