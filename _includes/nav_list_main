@@ -49,6 +49,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Pose Estimation" %}
+                        <li><a href="/categories/pose-estimation" class="">Pose Estimation ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "OpenAI" %}
                         <li><a href="/categories/openAI" class="">OpenAI ({{category[1].size}})</a></li>
                     {% endif %}
