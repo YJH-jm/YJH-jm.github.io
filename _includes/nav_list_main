@@ -32,7 +32,7 @@
           
         
         <!-- Deep Learning -->
-        <span class="nav__sub-title">Deep Learning</span>
+        <span class="nav__sub-title">AI Topic</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Face Recognition" %}
@@ -49,6 +49,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "3D Vision" %}
+                        <li><a href="/categories/3D-vision" class="">3D Vision ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Pose Estimation" %}
                         <li><a href="/categories/pose-estimation" class="">Pose Estimation ({{category[1].size}})</a></li>
                     {% endif %}
@@ -58,6 +65,22 @@
                 {% for category in site.categories %}
                     {% if category[0] == "OpenAI" %}
                         <li><a href="/categories/openAI" class="">OpenAI ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Programming</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ROS" %}
+                        <li><a href="/categories/ros" class="">ROS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Open3D" %}
+                        <li><a href="/categories/open3d" class="">Open3D ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
