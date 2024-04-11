@@ -35,6 +35,13 @@
         <span class="nav__sub-title">AI Topic</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Basic" %}
+                        <li><a href="/categories/basic" class="">Basic ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Face Recognition" %}
                         <li><a href="/categories/face-recognition" class="">Face Recognition ({{category[1].size}})</a></li>
                     {% endif %}
