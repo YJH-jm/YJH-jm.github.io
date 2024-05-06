@@ -50,7 +50,12 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Object Detection" %}
-                        <li><a href="/categories/object-detection" class="">Object Detection ({{category[1].size}})</a></li>
+                        <li><a href="/categories/object-detection" class="">2D Object Detection ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "3D Object Detection" %}
+                        <li><a href="/categories/3d-object-detection" class="">3D Object Detection ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -91,7 +96,15 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+        <span class="nav__sub-title">Development Tools</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/git" class="">Git | GitHub ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
         <span class="nav__sub-title">ETC</span>
             <ul>
                 {% for category in site.categories %}
