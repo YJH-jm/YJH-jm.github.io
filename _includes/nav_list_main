@@ -103,20 +103,28 @@
                         <li><a href="/categories/git" class="">Git | GitHub ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Docker" %}
+                            <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </ul>
             
         <span class="nav__sub-title">ETC</span>
+            
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Docker" %}
-                        <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
+                    {% if category[0] == "Blog" %}
+                        <li><a href="/categories/blog" class="">Git Blog ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">Git Blog ({{category[1].size}})</a></li>
+                    {% if category[0] == "None" %}
+                        <li><a href="/categories/none" class="">- ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
