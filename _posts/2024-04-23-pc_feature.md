@@ -48,7 +48,7 @@ E(u,v,w)\approx \begin{bmatrix}
 $$
 
 $$
- M=\sum_{x,y,z\in \Omega}\begin{bmatrix}
+M=\sum_{x,y,z\in \Omega}\begin{bmatrix}
  I_{x}^{2} &I_{x}I_{y} &I_{x}I_{z}\\
  I_{y}I_{x} &I_{y}^{2} &I_{y}I_{z}\\
  I_{z}I_{x} &I_{z}I_{y} &I_{z}^{2}
@@ -140,7 +140,6 @@ Histogram을 기반으로 point cloud 특징을 검출하는 descriptor
    \end{align}
    $$
    
-
 5. $f_{1} $ ~ $f_{4}$ 을 이용하여 indexing 
 
    
