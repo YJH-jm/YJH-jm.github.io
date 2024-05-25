@@ -103,13 +103,23 @@
                         <li><a href="/categories/git" class="">Git | GitHub ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-                <ul>
-                    {% for category in site.categories %}
-                        {% if category[0] == "Docker" %}
-                            <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Docker" %}
+                        <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+          
+
+        <span class="nav__sub-title">Cloud</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Azure" %}
+                        <li><a href="/categories/azure" class="">Azure ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
             
         <span class="nav__sub-title">ETC</span>
