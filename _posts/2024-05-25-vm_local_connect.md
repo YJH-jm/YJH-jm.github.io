@@ -137,7 +137,7 @@ typore-root-url: ../
 
 ## Remote tunnel 
 
-1. 로컬과 가상 머신에 VSC를 설치하고 2가지 Extension 설치
+1. 로컬과 가상 머신에 VSC를 설치하고Extension 설치
 
    - Remote - Tunnels
    - Dev Containers
