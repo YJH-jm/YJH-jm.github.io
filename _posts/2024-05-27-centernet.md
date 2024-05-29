@@ -3,7 +3,7 @@
 layout: single
 title:  "CenterNet" # 글 제목
 categories: 
-  -  Obeject Detection # category
+  -  Object Detection # category
 tags: 
   - [] # tag
 toc: true 
