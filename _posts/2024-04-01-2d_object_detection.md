@@ -334,7 +334,7 @@ $$
 
 
 $$
-IoU = \frac{|A\cap  B|}{|A \cup B|}
+IoU = \frac{|A\cap  B|}{|A \cup B|}=\frac{TP}{TP+FP+FN}
 $$
 
 
