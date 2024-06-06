@@ -3,7 +3,7 @@
 layout: single
 title:  "Segmentation 개요" # 글 제목
 categories: 
-  - Object Tracking # category
+  - Segmentation # category
 tags: 
   - [] # tag
 toc: true 
