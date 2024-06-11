@@ -340,3 +340,28 @@ Xception과 atrous convolution 을 이용하여 빠르고 강력한 네트워크
 
 <br>
 
+
+
+# DeepLabv3+ 학습 결과
+
+[segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch) 를 코드를 사용하여 학습 진행
+
+학습 데이터는 kaggle에 있는 [Massachusetts_Buildings_Dataset](https://www.kaggle.com/datasets/balraj98/massachusetts-buildings-dataset)
+
+Test dataset으로 학습 결과를 확인했을 때 
+
+Mean IoU Score: 0.7990
+Mean Dice Loss: 0.1265
+
+위와 같은 결과를 얻음
+
+<br>
+
+아래는 결과 예시이며, 차례대로 이미지, GT map, predicted map
+
+건물의 모서리 부분이 둥글게 나오는 것을 확인
+
+<br>
+
+![image-20240610223417308](/images/2024-06-07-deeplabv3plus/image-20240610223417308.png)
+
