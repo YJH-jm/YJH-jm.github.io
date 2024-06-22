@@ -3,7 +3,7 @@
 layout: single
 title:  "3D segmentation 개요" # 글 제목
 categories: 
-  - 3D Vision# category
+  - 3D Vision # category
 tags: 
   - [] # tag
 toc: true 
