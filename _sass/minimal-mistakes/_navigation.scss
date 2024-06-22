@@ -499,6 +499,15 @@
   border-bottom: 1px solid $border-color;
 }
 
+.sublist {
+  display: none; /* 초기에 서브 목록은 숨김 */
+  margin-left: 5px; /* 들여쓰기 */
+}
+
+.show {
+  display: block; /* 클릭 시 서브 목록 표시 */
+}
+
 /*
      Table of contents navigation
      ========================================================================== */

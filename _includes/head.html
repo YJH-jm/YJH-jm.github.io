@@ -13,6 +13,13 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+<script>
+  function toggleSublist(span) {
+    var sublist = span.nextElementSibling; // 클릭된 span의 다음 형제 요소(서브 목록 ul) 선택
+    sublist.classList.toggle('show'); // 서브 목록의 show 클래스를 toggle하여 표시/숨김 처리
+  }
+</script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
