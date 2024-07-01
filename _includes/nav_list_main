@@ -31,7 +31,15 @@
                 {% endfor %}
             </ul>
           
-        
+        <span class="nav__sub-title" onclick="toggleSublist(this)">Basic </span>
+            <ul class="sublist">
+                {% for category in site.categories %}
+                    {% if category[0] == "Geometry" %}
+                        <li><a href="/categories/geometry" class="">Geometry for CV ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <!-- Deep Learning -->
         <span class="nav__sub-title" onclick="toggleSublist(this)">Computer Vision</span>
             <ul class="sublist">
